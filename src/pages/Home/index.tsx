@@ -70,12 +70,6 @@ export default function Home() {
                                                         <Button leftIcon={<ViewIcon />} colorScheme='purple' size='xs'>
                                                             Orar
                                                         </Button>
-                                                        {/* <Button leftIcon={<EditIcon />} colorScheme='blue' size='xs'>
-                                                Editar
-                                            </Button>
-                                            <Button leftIcon={<DeleteIcon />} colorScheme='red' size='xs'>
-                                                Apagar
-                                            </Button> */}
                                                     </Stack>
                                                 </Td>
                                             </Tr>

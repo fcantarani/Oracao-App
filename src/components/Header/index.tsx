@@ -62,7 +62,7 @@ export default function Header() {
                                     minW={0}>
                                     <Avatar
                                         size={'sm'}
-                                        src={'https://avatars.dicebear.com/api/male/username.svg'}
+                                        src={'https://w7.pngwing.com/pngs/637/108/png-transparent-jedi-avatar-cartoon-software-developer-headgear-black-hair.png'}
                                     />
                                 </MenuButton>
                                 <MenuList alignItems={'center'}>
@@ -70,7 +70,7 @@ export default function Header() {
                                     <Center>
                                         <Avatar
                                             size={'2xl'}
-                                            src={'https://avatars.dicebear.com/api/male/username.svg'}
+                                            src={'https://w7.pngwing.com/pngs/637/108/png-transparent-jedi-avatar-cartoon-software-developer-headgear-black-hair.png'}
                                         />
                                     </Center>
                                     <br />
