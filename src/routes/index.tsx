@@ -23,7 +23,7 @@ export const AppRoute = createBrowserRouter(
                     { path: "/admin/type", element: <Type /> },
                     { path: "/admin/user", element: <User /> },
 
-                ]
+                ],
         }
     ]
 )
