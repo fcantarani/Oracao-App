@@ -1,5 +1,8 @@
 import { PlusSquareIcon } from "@chakra-ui/icons"
-import { Box, Button, Flex, FormControl, FormLabel, Input, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Spacer, useDisclosure } from "@chakra-ui/react"
+import { Box, Button, Flex, FormControl, FormLabel, Input, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Select, Spacer, Textarea, useDisclosure } from "@chakra-ui/react"
+
+
+
 
 export default function CreatePray() {
 
@@ -19,18 +22,32 @@ export default function CreatePray() {
             <Modal size="xl" isOpen={isOpen} onClose={onClose}>
                 <ModalOverlay />
                 <ModalContent>
-                    <ModalHeader>Create your account</ModalHeader>
+                    <ModalHeader>Cadastrando oração</ModalHeader>
                     <ModalCloseButton />
                     <ModalBody pb={6}>
                         <FormControl>
-                            <FormLabel>First name</FormLabel>
-                            <Input placeholder='First name' />
+                            <FormLabel>Título</FormLabel>
+                            <Input name='title' placeholder='Título' />
                         </FormControl>
 
                         <FormControl mt={4}>
-                            <FormLabel>Last name</FormLabel>
-                            <Input placeholder='Last name' />
+                            <FormLabel>Descrição</FormLabel>
+                            <Textarea
+                                name='description'
+                                placeholder='Descrição detalhada do seu pedido'
+                                size='sm'
+                            />
                         </FormControl>
+
+                        <FormControl mt={4}>
+                            <FormLabel>Categoria</FormLabel>
+                            <Select placeholder='Select option'>
+                                <option value='option1'>Option 1</option>
+                                <option value='option2'>Option 2</option>
+                                <option value='option3'>Option 3</option>
+                            </Select>
+                        </FormControl>
+
                     </ModalBody>
 
                     <ModalFooter>
