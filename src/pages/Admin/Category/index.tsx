@@ -1,13 +1,17 @@
 import { DeleteIcon, EditIcon } from "@chakra-ui/icons";
-import { Button, Card, CardBody, Stack, Table, TableContainer, Tbody, Td, Th, Thead, Tr } from "@chakra-ui/react";
+import { Button, Card, CardBody, Stack, Table, TableContainer, Tag, Tbody, Td, Th, Thead, Tr } from "@chakra-ui/react";
+import CreateCategory from "../../../components/Modal/CreateCategory";
 
 export default function Category() {
     return (
         <>
+
+            <CreateCategory />
+
             <Card>
                 <CardBody>
                     <TableContainer >
-                        <Table size='md'>
+                        <Table size='sm'>
                             <Thead>
                                 <Tr bgColor="#88AABF" >
                                     <Th textColor="#FFF">Id</Th>
@@ -24,14 +28,14 @@ export default function Category() {
                                     <Td>1</Td>
                                     <Td>Titulo</Td>
                                     <Td>Descrição</Td>
-                                    <Td>Cor</Td>
+                                    <Td><Tag size={'md'} variant='solid' colorScheme='blue'>Azul</Tag></Td>
                                     <Td>Criado em</Td>
                                     <Td>
                                         <Stack spacing={2} direction='row' align='center'>
                                             <Button leftIcon={<DeleteIcon />} colorScheme='red' size='xs'>
                                                 Apagar
                                             </Button>
-                                            <Button leftIcon={<EditIcon />} colorScheme='telegram' size='xs'>
+                                            <Button onClick={() => console.log('editar')} leftIcon={<EditIcon />} colorScheme='telegram' size='xs'>
                                                 Editar
                                             </Button>
                                         </Stack>

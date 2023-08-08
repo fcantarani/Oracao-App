@@ -12,12 +12,12 @@ import {
     Button,
 } from '@chakra-ui/react'
 import { Card, CardBody } from '@chakra-ui/react'
-import CreatePray from '../../components/Modal/Create';
 import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
 import { useState } from 'react';
+import CreatePray from '../../components/Modal/CreatePray';
 
 export default function Home() {
-    const[praying, setPraying] = useState(false);
+    const [praying, setPraying] = useState(false);
 
     interface Pray {
         id: number,
@@ -90,8 +90,7 @@ export default function Home() {
                     </TableContainer>
                 </CardBody>
             </Card>
-            {praying}
         </>
-        
+
     );
 }

@@ -65,7 +65,7 @@ export default function CreatePray() {
                     <ModalFooter>
                         <Button colorScheme="red" size={'sm'} mr={3} onClick={onClose}>Cancelar</Button>
                         <Button colorScheme='blue' size={'sm'}>
-                            Save
+                            Salvar
                         </Button>
                     </ModalFooter>
                 </ModalContent>
