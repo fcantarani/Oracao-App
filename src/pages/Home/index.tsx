@@ -14,8 +14,10 @@ import {
 import { Card, CardBody } from '@chakra-ui/react'
 import CreatePray from '../../components/Modal/Create';
 import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
+import { useState } from 'react';
 
 export default function Home() {
+    const[praying, setPraying] = useState(false);
 
     interface Pray {
         id: number,
@@ -68,12 +70,12 @@ export default function Home() {
                                                 <Td>{Pray.created_at}</Td>
                                                 <Td>
                                                     <Stack spacing={2} direction='row' align='center'>
-                                                        {Pray.hasPray === true ?
-                                                            <Button leftIcon={<ViewIcon />} colorScheme='purple' size='xs'>
+                                                        {praying == true ?
+                                                            <Button onClick={() => setPraying(!praying)} leftIcon={<ViewIcon />} colorScheme='purple' size='xs'>
                                                                 Começar a Orar
                                                             </Button>
                                                             :
-                                                            <Button leftIcon={<ViewOffIcon />} colorScheme='orange' size='xs'>
+                                                            <Button onClick={() => setPraying(!praying)} leftIcon={<ViewOffIcon />} colorScheme='orange' size='xs'>
                                                                 Deixar de Orar
                                                             </Button>
                                                         }
@@ -88,6 +90,8 @@ export default function Home() {
                     </TableContainer>
                 </CardBody>
             </Card>
+            {praying}
         </>
+        
     );
 }
