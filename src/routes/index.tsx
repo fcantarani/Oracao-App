@@ -7,12 +7,15 @@ import User from "../pages/Admin/User";
 import Home from "../pages/Home";
 import MyPray from "../pages/MyPray";
 import PrayFor from "../pages/PrayFor";
+import Login from "../pages/Login";
+
+const auth = true;
 
 export const AppRoute = createBrowserRouter(
     [
         {
             path: "/",
-            element: <Layout />,
+            element: auth === true ? <Layout /> : <Login />,
             errorElement: <Error />,
             children:
                 [

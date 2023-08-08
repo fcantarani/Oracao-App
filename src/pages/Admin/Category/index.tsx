@@ -7,7 +7,7 @@ export default function Category() {
             <Card>
                 <CardBody>
                     <TableContainer >
-                        <Table size='xl'>
+                        <Table size='md'>
                             <Thead>
                                 <Tr bgColor="#88AABF" >
                                     <Th textColor="#FFF">Id</Th>

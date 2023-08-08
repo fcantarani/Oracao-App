@@ -23,10 +23,7 @@ export default function Login() {
             bg={useColorModeValue('gray.50', 'gray.800')}>
             <Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}>
                 <Stack align={'center'}>
-                    <Heading fontSize={'4xl'}>Sign in to your account</Heading>
-                    <Text fontSize={'lg'} color={'gray.600'}>
-                        to enjoy all of our cool <Text color={'blue.400'}>features</Text> ✌️
-                    </Text>
+                    <Heading fontSize={'4xl'}>Acessar sua conta</Heading>
                 </Stack>
                 <Box
                     rounded={'lg'}
@@ -35,11 +32,11 @@ export default function Login() {
                     p={8}>
                     <Stack spacing={4}>
                         <FormControl id="email">
-                            <FormLabel>Email address</FormLabel>
+                            <FormLabel>E-mail</FormLabel>
                             <Input type="email" />
                         </FormControl>
                         <FormControl id="password">
-                            <FormLabel>Password</FormLabel>
+                            <FormLabel>Senha</FormLabel>
                             <Input type="password" />
                         </FormControl>
                         <Stack spacing={10}>
@@ -47,16 +44,11 @@ export default function Login() {
                                 direction={{ base: 'column', sm: 'row' }}
                                 align={'start'}
                                 justify={'space-between'}>
-                                <Checkbox>Remember me</Checkbox>
-                                <Text color={'blue.400'}>Forgot password?</Text>
+                                <Checkbox>Lembrar-me |</Checkbox>
+                                <Text color={'blue.400'}>Esqueceu a senha?</Text>
                             </Stack>
-                            <Button
-                                bg={'blue.400'}
-                                color={'white'}
-                                _hover={{
-                                    bg: 'blue.500',
-                                }}>
-                                Sign in
+                            <Button bg={'blue.400'} color={'white'} _hover={{bg: 'blue.500'}}>
+                                Acessar
                             </Button>
                         </Stack>
                     </Stack>
