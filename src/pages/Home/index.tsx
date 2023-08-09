@@ -37,6 +37,13 @@ export default function Home() {
         { id: 6, title: "F", description: "descrição do F", category: "Categoria 6", created_at: '2023-06-01', hasPray: false },
         { id: 7, title: "G", description: "descrição do G", category: "Categoria 7", created_at: '2023-06-01', hasPray: false },
         { id: 8, title: "H", description: "descrição do H", category: "Categoria 8", created_at: '2023-06-01', hasPray: true },
+        { id: 2, title: "B", description: "descrição do B", category: "Categoria 2", created_at: '2023-06-01', hasPray: false },
+        { id: 3, title: "C", description: "descrição do C", category: "Categoria 3", created_at: '2023-06-01', hasPray: true },
+        { id: 4, title: "D", description: "descrição do D", category: "Categoria 4", created_at: '2023-06-01', hasPray: true },
+        { id: 5, title: "E", description: "descrição do E", category: "Categoria 5", created_at: '2023-06-01', hasPray: false },
+        { id: 6, title: "F", description: "descrição do F", category: "Categoria 6", created_at: '2023-06-01', hasPray: false },
+        { id: 7, title: "G", description: "descrição do G", category: "Categoria 7", created_at: '2023-06-01', hasPray: false },
+        { id: 8, title: "H", description: "descrição do H", category: "Categoria 8", created_at: '2023-06-01', hasPray: true },
         { id: 9, title: "I", description: "descrição do I", category: "Categoria 9", created_at: '2023-06-01', hasPray: true },
     ];
 

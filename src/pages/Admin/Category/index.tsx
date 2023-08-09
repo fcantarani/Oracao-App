@@ -15,7 +15,7 @@ export default function Category() {
                             <Thead>
                                 <Tr bgColor="#88AABF" >
                                     <Th textColor="#FFF">Id</Th>
-                                    <Th textColor="#FFF">Titulo</Th>
+                                    <Th textColor="#FFF">Categoria</Th>
                                     <Th textColor="#FFF">Descrição</Th>
                                     <Th textColor="#FFF">Cor</Th>
                                     <Th textColor="#FFF">Criado em</Th>

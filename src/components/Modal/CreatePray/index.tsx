@@ -23,7 +23,7 @@ export default function CreatePray() {
                     <ModalCloseButton />
                     <ModalBody pb={6}>
                         <FormControl>
-                            <FormLabel>Título</FormLabel>
+                            <FormLabel>Oração</FormLabel>
                             <Input name='title' placeholder='Título' size={'sm'} />
                         </FormControl>
 

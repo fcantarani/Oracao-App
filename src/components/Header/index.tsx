@@ -15,6 +15,7 @@ import {
     HStack,
     IconButton,
     useDisclosure,
+    Link,
 } from '@chakra-ui/react'
 import { CloseIcon, HamburgerIcon, MoonIcon, SunIcon } from '@chakra-ui/icons'
 
@@ -61,10 +62,10 @@ export default function Header() {
                         <Box>Logo</Box>
 
                         <HStack as={'nav'} spacing={4} display={{ base: 'none', md: 'flex' }}>
-                            <NavLink key={'home'}>Home</NavLink>
-                            <NavLink key={'Mp'}>MP</NavLink>
-                            <NavLink key={'Pf'}>PF</NavLink>
-                            <NavLink key={'Ad'}>Admin</NavLink>
+                            <NavLink key={'home'}><Link href='/home'> Home</Link></NavLink>
+                            <NavLink key={'mypray'}><Link href='/mypray'>Meus Pedidos</Link></NavLink>
+                            <NavLink key={'prayfor'}><Link href='/prayfor'>Orando Por...</Link></NavLink>
+                            <NavLink key={'admin'}><Link href='/admin/category'>Admin</Link></NavLink>
                         </HStack>
                     </HStack>
 

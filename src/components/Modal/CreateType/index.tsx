@@ -1,7 +1,7 @@
 import { PlusSquareIcon } from "@chakra-ui/icons"
 import { Box, Button, Flex, FormControl, FormLabel, Input, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Spacer, Textarea, useDisclosure } from "@chakra-ui/react"
 
-export default function CreateCategory() {
+export default function CreateType() {
 
     const { isOpen, onOpen, onClose } = useDisclosure()
     return (
@@ -19,11 +19,11 @@ export default function CreateCategory() {
             <Modal size={'xl'} isOpen={isOpen} onClose={onClose}>
                 <ModalOverlay />
                 <ModalContent>
-                    <ModalHeader>Cadastrar Categoria</ModalHeader>
+                    <ModalHeader>Cadastrar Tipo</ModalHeader>
                     <ModalCloseButton />
                     <ModalBody pb={6}>
                         <FormControl>
-                            <FormLabel>Categoria</FormLabel>
+                            <FormLabel>Tipo</FormLabel>
                             <Input name='title' placeholder='Título' size={'sm'} />
                         </FormControl>
 
@@ -58,4 +58,3 @@ export default function CreateCategory() {
         </div>
     )
 }
-
